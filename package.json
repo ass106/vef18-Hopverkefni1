@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "node-sass": "^4.9.4",
+    "npm": "^6.4.1",
     "run-all": "^1.0.1"
   }
 }

@@ -21,4 +21,7 @@ html { /* stylelint-disable-line */
 
 
 // TODO sækja allar sass skrár
-@import "scss/index.scss";
+@import "scss/cards";
+@import "scss/title";
+@import "scss/footer";
+@import "scss/info";

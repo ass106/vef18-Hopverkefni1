@@ -1,0 +1,23 @@
+@import "./config";
+
+.info {
+    display: flex;
+    
+    &__text {
+        font-family: $font-main;
+
+        button {
+            background-color: $color-6;
+        }
+
+        h2 {
+            font-family: $font-heading;
+        }
+    }
+
+    &__img {
+        img {
+            max-width: 500px;
+        }
+    }
+}

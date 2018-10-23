@@ -5,75 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vöruhúsið</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
     <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header>
-      <div class="Title">
-        <div class="Title__head">
+    <header class="header">
+      <div class="header__title">
+        <div class="header__title__head">
           <h1>Vöruhúsið</h1>
         </div>
-        <div class="Title__links">
-          <a class="Title__link" href="./index.html">Forsíða</a>
-          <a class="Title__link" href="./pages/products.html">Vörur</a>
-          <a class="Title__link" href="./pages/staff.html">Starfsfólk</a>
-          <a class="Title__link" href="./pages/cart.html">Karfa</a>
+        <div class="header__title__links">
+          <a class="header__title__link" href="./index.html">Forsíða</a>
+          <a class="header__title__link" href="./pages/products.html">Vörur</a>
+          <a class="header__title__link" href="./pages/staff.html">Starfsfólk</a>
+          <a class="header__title__link" href="./pages/cart.html">Karfa</a>
+        </div>
+        <div class="Title">
+          <div class="Title__head">
+            <h1>Vöruhúsið</h1>
+          </div>
+          <div class="Title__links">
+            <a class="Title__link" href="./index.html">Forsíða</a>
+            <a class="Title__link" href="./pages/products.html">Vörur</a>
+            <a class="Title__link" href="./pages/staff.html">Starfsfólk</a>
+            <a class="Title__link" href="./pages/cart.html">Karfa</a>
+          </div>
         </div>
       </div>
     </header>
     <main>
-      <section>
-        <h2>Allar vörurnar</h2>
-        <p>Vöruhúsið hefur allar þær vörur sem þig vantar</p>
-        <button>Skoða vörur</button>
-        <img src="./img/products.jpg">
+      <section class="info">
+        <div class="info__text">
+          <h2>Allar vörurnar</h2>
+          <p>Vöruhúsið hefur allar þær vörur sem þig vantar</p>
+          <button>Skoða vörur</button>
+        </div>
+        <div class="info__img">
+          <img src="./img/products.jpg">
+        </div>
       </section>
-      <section>
-        <h1>Besta starfsfólkið</h1>
-        <p>Starfsfólkið okkar hugsar vel um þig</p>
-        <button>Kynnast starfsfólki</button>
-        <img src="./img/team.jpg">
+      <section class="info">
+        <div class="info__text">
+          <h2>Besta starfsfólkið</h1>
+          <p>Starfsfólkið okkar hugsar vel um þig</p>
+          <button>Kynnast starfsfólki</button>
+        </div>
+        <div class="info__img">
+          <img src="./img/team.jpg">
+        </div>
       </section>
     </main>
-    <footer>
-      <div>
-        <h3>Vöruflokkar</h3>
-        <ul>
-          <li>Nauðsynjavörur</li>            
-          <li>Frábærar vörur</li>          
-          <li>Ómissandi vörur</li>          
-          <li>Ótrúlegar vörur</li>          
-          <li>Magnaðar vörur</li>          
-        </ul>
+    <footer class="footer">
+      <div class="footer__lists">
+        <div class="footer__list">
+          <ul>
+            <h3>Vöruflokkar</h3>
+            <li><a class="footer__list__link" href="./pages/products.html">Nauðsynjavörur</a></li>            
+            <li><a class="footer__list__link" href="./pages/products.html">Frábærar vörur</a></li>          
+            <li><a class="footer__list__link" href="./pages/products.html">Ómissandi vörur</a></li>          
+            <li><a class="footer__list__link" href="./pages/products.html">Ótrúlegar vörur</a></li>          
+            <li><a class="footer__list__link" href="./pages/products.html">Magnaðar vörur</a></li>          
+          </ul>
+        </div>
+        <div class="footer__list">
+          <ul>
+            <h3>Vöruflokkar</h3>
+            <li><a class="footer__list__link" href="./pages/products.html">Trylltar vörur</a></li>
+            <li><a class="footer__list__link" href="./pages/products.html">Geggjaðar vörur</a></li>
+            <li><a class="footer__list__link" href="./pages/products.html">Svakalegar vörur</a></li>
+            <li><a class="footer__list__link" href="./pages/products.html">Fáránlegar vörur</a></li>
+            <li><a class="footer__list__link" href="./pages/products.html">Klikkaðar vörur</a></li>
+          </ul>            
+        </div>
+        <div class="footer__list">
+          <ul>
+            <h3>Vöruflokkar</h3>
+            <li><a class="footer__list__link" href="./pages/products.html">Nýjar vörur</a></li>
+            <li><a class="footer__list__link" href="./pages/products.html">Gamlar vörur</a></li>
+            <li><a class="footer__list__link" href="./pages/products.html">Skrítnar vörur</a></li>
+          </ul>
+        </div>
+        <div class="footer__list">
+          <ul>
+            <h3>Síður</h3>
+            <li><a class="footer__list__link" href="./pages/products.html">Allar vörur</a></li>
+            <li><a class="footer__list__link" href="./pages/products.html">Starfsfólk</a></li>
+            <li><a class="footer__list__link" href="./pages/products.html">Karfa</a></li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <h3>Vöruflokkar</h3>
-        <ul>
-          <li>Trylltar vörur</li>          
-          <li>Geggjaðar vörur</li>          
-          <li>Svakalegar vörur</li>          
-          <li>Fáránlegar vörur</li>          
-          <li>Klikkaðar vörur</li>
-        </ul>            
+      <div class="footer__note">
+        &copy; Vöruhúsið 2018
       </div>
-      <div>
-        <h3>Vöruflokkar</h3>
-        <ul>
-          <li>Nýjar vörur</li>
-          <li>Gamlar vörur</li>
-          <li>Skrítnar vörur</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Síður</h3>
-        <ul>
-          <li>Allar vörur</li>
-          <li>Starfsfólk</li>
-          <li>Karfa</li>
-        </ul>
-      </div>
-      <p>&copy; Vöruhúsið 2018</p>
     </footer>
   </body>
 </html>

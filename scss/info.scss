@@ -3,13 +3,14 @@
 .info {
     display: flex;
     justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
+    flex-wrap: wrap;
+    
     margin: $gutter*2;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    flex-wrap: wrap;
-    justify-content: space-between;
     
     &__text {
         font-family: $font-main;

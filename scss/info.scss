@@ -3,15 +3,22 @@
 .info {
     display: flex;
     justify-content: center;
+    flex-direction: row;
     margin: $gutter*2;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
     
     &__text {
         font-family: $font-main;
+        width: 49%;
 
         button {
             background-color: $color-6;
             border: none;
-            max-width: 60%;
+            max-width: 50%;
             width: 100%;
         }
 
@@ -21,8 +28,9 @@
     }
 
     &__img {
+        width: 49%;
         img {
-            max-width: 500px;
+            width: 100%;
         }
     }
 }

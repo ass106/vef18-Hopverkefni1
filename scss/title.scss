@@ -9,15 +9,23 @@
             font-family: $font-heading;
             font-size: 32px;
         }
-        &__link {
-            text-decoration: none;
-            font-family: $font-main;
-            font-weight: bold;
-            flex-direction: row;
-        }
         &__links {
             text-align: center;
             align-content: flex-end;
+            display: flex;
+            flex-direction: row;
         }
+        
+        &__link {
+
+            justify-content: space-between;
+            text-decoration: none;
+            font-family: $font-main;
+            font-weight: bold;
+        }
+    }
+
+    &__basket {
+        justify-content: flex-end;
     }
 }

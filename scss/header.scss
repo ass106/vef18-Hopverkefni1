@@ -4,12 +4,18 @@
     @include header;
 
     &__title {
+        width: $max-width;
         margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
         &__head {
             font-family: $font-heading;
             font-size: 32px;
         }
         &__links {
+            
             text-align: center;
             align-content: flex-end;
             display: flex;
@@ -17,7 +23,6 @@
         }
         
         &__link {
-
             justify-content: space-between;
             text-decoration: none;
             font-family: $font-main;
@@ -26,6 +31,8 @@
     }
 
     &__basket {
+        display: flex;
         justify-content: flex-end;
+        flex-direction: row;
     }
 }

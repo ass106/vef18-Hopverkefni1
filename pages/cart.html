@@ -12,17 +12,17 @@
     <header>
         <div>
             <h1>Vöruhúsið</h1>
-            <p>Forsíða</p>
-            <p>Vörur</p>
-            <p>Starfsfólk</p>
-            <p>Karfa</p>
+            <p><a href="../index.html">Forsíða</a></p>
+            <p><a href="./products.html">Vörur</a></p>
+            <p><a href="./staff.html">Starfsfólk</a></p>
+            <p><a href="./cart.html">Karfa</a></p>
         </div>
     </header>
     <main>
       <section>
         <h2>Vörur í körfu</h2>
       </section>
-      <section>
+      <section class="card">
         <div>
           <img src="../img/watch.jpg">
           <div>
@@ -31,37 +31,39 @@
             <h3>99.900 kr.-</h3>
             <form>
               Fjöldi:
-              <input type="number" name="Fjöldi" min="1" required> 
+              <input type="number" name="Fjöldi" min="1" value="1" required> 
               <button>Uppfæra</button>
               <button>Eyða úr körfu</button>
             </form>
           </div>
         </div>
         <div>
-          <img src="../img/watch.jpg">
+          <img src="../img/headphones.jpg">
           <div>
             <h2>Hágæða heyrnatól</h2>
             <p>Þú munt ekki heyra neitt nema hágæða tónlist með þessum hágæða heyrnatólum. Höfum við minnst á að þau eru hágæða?</p>
             <h3>39.999 kr.-</h3>
             <form>
               Fjöldi:
-              <input type="number" name="Fjöldi" min="1" required>
-              <button>Uppfæra</button>
-              <button>Eyða úr körfu</button>
+              <input type="number" name="Fjöldi" min="1" value="1" required>
+              <button type="submit">Uppfæra</button>
+              <button type="reset">Eyða úr körfu</button>
             </form>
           </div>
         </div>
       </section>
-      <section>
-        <div>
+      <section class="card">
+        <fieldset>
           <h2>Sendingarupplýsingar</h2>
-        </div>
-        <div>
+          <label>Nafn:</label><input type="text">
+          <label>Email:</label><input type="text">
+        </fieldset>
+        <fieldset>
           <h2>Greiðsluupplýsingar</h2>
-        </div>
-        <div>
+          <label>Kortanúmer:</label><input type="text">
+          <label>Korthafi:</label><input type="text">
+        </fieldset>
           <button>Kaupa</button>
-        </div>
       </section>
     </main>
     <footer>

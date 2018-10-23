@@ -1,6 +1,4 @@
 // TODO stillingar hér
-<<<<<<< Updated upstream
-=======
 
 $max-width: 1200px;
 $gutter: 20px;
@@ -41,4 +39,3 @@ $transition: 300ms ease-in-out;
 @mixin offset-left($cols: 0) {
     margin-left: ($cols / 12 * 100) * 1%;
 }
->>>>>>> Stashed changes

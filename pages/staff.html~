@@ -18,14 +18,12 @@
             </div>
         </header>
         <main>
-            <div class="imgs">
             <section>
                 <img src="../img/karolina.jpg">
                 <img src="../img/tomas.jpg">
                 <img src="../img/anna.jpg">
                 <img src="../img/jon.jpg">
             </section>
-            </div>
         </main>
         <footer>
             <div>

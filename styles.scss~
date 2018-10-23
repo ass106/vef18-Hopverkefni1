@@ -26,4 +26,3 @@ html { /* stylelint-disable-line */
 @import "./scss/title";
 @import "./scss/footer";
 @import "./scss/info";
-@import "./scss/staff_imgs";

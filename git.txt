@@ -1,0 +1,53 @@
+
+    git init >> Working Dir >> git add >> Staging Area >> git commit >> Repository
+
+    git status
+
+    git diff <filename>
+
+    git commit -m "comment"
+
+    git log
+
+    git show HEAD
+
+    git ckeckout HEAD <filename> // revert changes made to <filename> in WD
+
+    git reset HEAD <filename> // unstage file
+
+    git reset commit_SHA
+
+    git branch // see what branch you on
+
+    git branch new_branch // create new branch
+
+    git checkout new_branch // switch to this branch
+
+    git merge new_branch // from master branch to merge with master
+
+    git branch -d new_branch // delete branch
+    
+    =============== REMOTE =============
+
+    git clone remote_location clone_name 
+    // remote_location can be web address or filepath
+    // remote address is given the name origin
+    // clone_name is the name you give to the dir in which git will clone
+
+    git remote -v
+    // get list of remotes
+
+    git fetch
+    // see if changes have been made to the remote, brings the changes down
+    // to your local copy.
+    // this does NOT merge changes from the remote into your local repo
+    // It brings those changes onto what's called a remote branch
+
+    git merge origin/master
+    // integrate origin/master into your local master
+
+    git push origin branch_name
+    // push your branch up to the remote, origin
+    
+
+    

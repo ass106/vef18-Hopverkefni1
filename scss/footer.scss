@@ -1,0 +1,40 @@
+@import "./config";
+
+.footer {
+    background-color: $color-6;
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+    
+    &__lists {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        align-content: space-between;
+        
+    }
+    
+    &__list {
+        font-family: $font-main;
+        align-content: space-around;
+        display: flex;
+        font-weight: bold;
+        flex-direction: column;
+        
+        & ul {
+            list-style: none;
+
+        }
+        
+        &__link {
+            text-decoration: none;
+            color: $color-5;
+            text-decoration: none;
+            font-weight: normal;
+        }
+    }
+
+    &__note {
+
+    }
+}

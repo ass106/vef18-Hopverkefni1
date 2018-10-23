@@ -1,0 +1,28 @@
+@import "./config";
+
+.info {
+    display: flex;
+    justify-content: center;
+    margin: $gutter*2;
+    
+    &__text {
+        font-family: $font-main;
+
+        button {
+            background-color: $color-6;
+            border: none;
+            max-width: 60%;
+            width: 100%;
+        }
+
+        h2 {
+            font-family: $font-heading;
+        }
+    }
+
+    &__img {
+        img {
+            max-width: 500px;
+        }
+    }
+}

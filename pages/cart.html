@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Karfa</title>
 
-    <link rel="stylesheet" href="grid.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../grid.css">
+    <link rel="stylesheet" href="../styles.css">
   </head>
   <body>
     <header>
@@ -22,7 +22,7 @@
       <section>
         <h2>Vörur í körfu</h2>
       </section>
-      <section>
+      <section class="card">
         <div>
           <img src="../img/watch.jpg">
           <div>
@@ -38,7 +38,7 @@
           </div>
         </div>
         <div>
-          <img src="../img/watch.jpg">
+          <img src="../img/headphones.jpg">
           <div>
             <h2>Hágæða heyrnatól</h2>
             <p>Þú munt ekki heyra neitt nema hágæða tónlist með þessum hágæða heyrnatólum. Höfum við minnst á að þau eru hágæða?</p>
@@ -52,16 +52,18 @@
           </div>
         </div>
       </section>
-      <section>
-        <div>
+      <section class="card">
+        <fieldset>
           <h2>Sendingarupplýsingar</h2>
-        </div>
-        <div>
+          <label>Nafn:</label><input type="text">
+          <label>Email:</label><input type="text">
+        </fieldset>
+        <fieldset>
           <h2>Greiðsluupplýsingar</h2>
-        </div>
-        <div>
+          <label>Kortanúmer:</label><input type="text">
+          <label>Korthafi:</label><input type="text">
+        </fieldset>
           <button>Kaupa</button>
-        </div>
       </section>
     </main>
     <footer>

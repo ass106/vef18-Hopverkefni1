@@ -1,0 +1,23 @@
+@import "./config";
+
+.header {
+    @include header;
+
+    &__title {
+        margin: 0 auto;
+        &__head {
+            font-family: $font-heading;
+            font-size: 32px;
+        }
+        &__link {
+            text-decoration: none;
+            font-family: $font-main;
+            font-weight: bold;
+            flex-direction: row;
+        }
+        &__links {
+            text-align: center;
+            align-content: flex-end;
+        }
+    }
+}

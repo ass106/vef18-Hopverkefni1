@@ -16,9 +16,13 @@ html { /* stylelint-disable-line */
   overflow-x: hidden;
 
   // TODO fleiri grunn stillingar
+
 }
 
 
 
 // TODO sækja allar sass skrár
-@import "scss/...";
+@import "./scss/cards";
+@import "./scss/title";
+@import "./scss/footer";
+@import "./scss/info";

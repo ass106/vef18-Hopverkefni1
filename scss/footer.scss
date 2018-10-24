@@ -2,28 +2,30 @@
 
 .footer {
     background-color: $color-6;
-    display: flex;
-    justify-content: center;
     height: 30vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
     
     &__lists {
         display: flex;
-        flex-direction: row;
-        margin: 0 auto;
-        align-content: space-between;
+        justify-content: space-between;
+        align-content: flex-start;
+        @include columns;
+        @include offset-left;
         
     }
     
     &__list {
         font-family: $font-main;
-        align-content: space-around;
         display: flex;
         font-weight: bold;
         flex-direction: column;
         
         & ul {
             list-style: none;
-
         }
         
         &__link {
@@ -31,10 +33,15 @@
             color: $color-5;
             text-decoration: none;
             font-weight: normal;
+            transition: 0.4s;
+            
+            &:hover {
+                color: $color-1;
+            }
         }
     }
 
     &__note {
-
+        margin: 0 auto;
     }
 }

@@ -17,6 +17,14 @@ html { /* stylelint-disable-line */
 
   // TODO fleiri grunn stillingar
 
+  h1, h2, h3 {
+    font-family: $font-heading;
+  }
+
+  p {
+    font-family: $font-main;
+  }
+
 }
 
 

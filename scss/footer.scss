@@ -11,8 +11,7 @@
     
     &__lists {
         display: flex;
-        justify-content: space-between;
-        @include columns;
+        justify-content: space-around;
         
     }
     

@@ -12,36 +12,38 @@
     &__lists {
         display: flex;
         justify-content: space-between;
-        align-content: flex-start;
         @include columns;
-        @include offset-left;
         
     }
     
     &__list {
-        font-family: $font-main;
         display: flex;
-        font-weight: bold;
         flex-direction: column;
+        width: 50%;
+
+        font-family: $font-main;
+        font-weight: bold;
         
         & ul {
             list-style: none;
         }
-        
-        &__link {
-            text-decoration: none;
-            color: $color-5;
-            text-decoration: none;
-            font-weight: normal;
-            transition: 0.4s;
-            
-            &:hover {
-                color: $color-1;
-            }
-        }
-    }
-
+    }   
     &__note {
         margin: 0 auto;
     }
 }
+
+.list {
+    &__link {
+        text-decoration: none;
+        color: $color-5;
+        text-decoration: none;
+        font-weight: normal;
+        transition: 0.4s;
+        
+        &:hover {
+            color: $color-1;
+        }
+    }
+}
+

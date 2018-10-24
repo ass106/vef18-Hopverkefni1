@@ -2,6 +2,7 @@
 
 .header {
     @include header;
+    padding: 0 $gutter;
 
     &__box {
         width: $max-width;
@@ -33,6 +34,7 @@
         align-items: center;
         text-align: center;
         width: 50%;
+        margin: 0 10% 0 26%;
     }
     
     &__link {
@@ -49,12 +51,11 @@
     &__basket {
         display: flex;
         align-items: center;
-        justify-content: flex-end;
-        
-        width: 200px;
-        background-size: 50%;
-        background-position: left center;
-        background: url(../img/cart.svg);
-        background-repeat: no-repeat;
+        width: 10%;
+        justify-content: space-between;
+        align-content: flex-end;
+        & img {
+            max-width: 30%;
+        }
     }
 }

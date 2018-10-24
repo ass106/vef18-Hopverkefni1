@@ -11,17 +11,20 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__title">
-        <div class="header__title__head">
+      <div class="header__box">
+        <div class="box__title">
           <h1>Vöruhúsið</h1>
         </div>
-        <div class="header__title__links">
-          <a class="header__title__link" href="../index.html">Forsíða</a>
-          <a class="header__title__link" href="./products.html">Vörur</a>
-          <a class="header__title__link" href="./staff.html">Starfsfólk</a>
-        </div>
-          <div class="header__basket">
-            <a class="header__title__link" href="./cart.html">Karfa (3)</a>
+        <div class="box__content">
+          <div class="box__links">
+            <a class="box__link" href="../index.html">Forsíða</a>
+            <a class="box__link" href="./products.html">Vörur</a>
+            <a class="box__link" href="./staff.html">Starfsfólk</a>
+          </div>
+          <div class="box__basket">
+            <img src="../img/cart.svg">
+            <a class="box__link" href="./cart.html">Karfa (3)</a>
+          </div>
         </div>
       </div>
     </header>
@@ -29,86 +32,116 @@
       <div class="cards">
         <div class="card">
           <div class="product">
-            <h2 class="product__title">Ótrúlegt úr</h2>
-            <p class="product__desc">Hvað er klukkan? Þetta úr mun svara því hvenær sem er.</p>
-            <p class="product__price">99.900 kr.-</p>
-          </div>
-          <div class="product__form">
-            <form>
-              <label>Fjöldi:</label>
-              <input type="number" name="Fjöldi" min="1" value="1" required>
-              <button type="submit" value="#" class="cart__btn">Setja í körfu</button>
-            </form>
-          </div>
-        </div>
-        <div class="card">
-          <div class="product">
-            <h2 class="product__title">Ananas drykkur</h2>
-            <p class="product__desc">Fólk er alveg „ananas“ yfir þessum drykk.</button>
-            <p class="product__price">4.900 kr.-</p>
-          </div>
-          <div class="product__form">
-            <form>
-              <label>Fjöldi:</label>
-              <input type="number" name="Fjöldi" min="1" value="1" required>
-              <button type="submit" value="#" class="cart__btn">Setja í körfu</button>
-            </form>
+            <div class="product__image">
+              <img src="../img/watch.jpg" alt="Great watch">
+            </div>
+            <div class="product__description">
+              <h2>Ótrúlegt úr</h2>
+              <p>Hvað er klukkan? Þetta úr mun svara því hvenær sem er.</p>
+              <h3>99.900 kr.-</h3>
+            </div>
+            <div class="product__form">
+              <form>
+                <label>Fjöldi:</label>
+                <input type="number" name="Fjöldi" min="1" value="1" required>
+                <button type="submit" value="#">Setja í körfu</button>
+              </form>
+            </div>
           </div>
         </div>
         <div class="card">
           <div class="product">
-            <h2 class="product__title">Gameboy</h2>
-            <p class="product__desc">Hver man ekki eftir gameboy?</p>
-            <p class="product__price">59.999 kr.-</p>
-          </div>
-          <div class="product__form">
-            <form>
-              <label>Fjöldi:</label>
-              <input type="number" name="Fjöldi" min="1" value="1" required>
-              <button type="submit" value="#" class="cart__btn">Setja í körfu</button>
-            </form>
-          </div>
-        </div>
-          <div class="card">
-            <div class="product">
-            <h2 class="product__title">Hlaupskór</h2>
-            <p class="product__desc">Þú munt hlaupa hratt í þessum.</p>
-            <p class="product__price">19.900 kr.-</p>
-          </div>
-          <div class="product__form">
-            <form>
-              <label>Fjöldi:</label>
-              <input type="number" name="Fjöldi" min="1" value="1" required>
-              <button type="submit" value="#" class="cart__btn">Setja í körfu</button>
-            </form>
+            <div class="product__image">
+                <img src="../img/pineapple.jpg" alt="Pinapple drink">
+            </div>
+            <div class="product__description">
+              <h2>Ananas drykkur</h2>
+              <p>Fólk er alveg „ananas“ yfir þessum drykk.</p>
+              <h3>4.900 kr.-</h3>
+            </div>
+            <div class="product__form">
+              <form>
+                <label>Fjöldi:</label>
+                <input type="number" name="Fjöldi" min="1" value="1" required>
+                <button type="submit" value="#">Setja í körfu</button>
+              </form>
+            </div>
           </div>
         </div>
-          <div class="card">
-            <div class="product">
-            <h2 class="product__title">Hágæða heyrnatól</h2>
-            <p class="product__desc">Taktu mynd af öllu sem þú sérð.</p>
-            <p class="product__price">1.999.900 kr.-</p>
-          </div>
-          <div class="product__form">
-            <form>
-              <label>Fjöldi:</label>
-              <input type="number" name="Fjöldi" min="1" value="1" required>
-              <button type="submit" value="#" class="cart__btn">Setja í körfu</button>
-            </form>
+        <div class="card">
+          <div class="product">
+            <div class="product__image">
+                <img src="../img/gameboy.jpg" alt="Gameboy">
+            </div>
+            <div class="product__description">
+              <h2>Gameboy</h2>
+              <p>Hver man ekki eftir gameboy?</p>
+              <h3>59.999 kr.-</h3>
+            </div>
+            <div class="product__form">
+              <form>
+                <label>Fjöldi:</label>
+                <input type="number" name="Fjöldi" min="1" value="1" required>
+                <button type="submit" value="#">Setja í körfu</button>
+              </form>
+            </div>
           </div>
         </div>
-          <div class="card">
-            <div class="product">
-            <h2 class="product__title">Ótrúlegt úr</h2>
-            <p class="product__desc">Hvað er klukkan? Þetta úr mun svara því hvenær sem er.</p>
-            <p class="product__price">99.900 kr.-</p>
+        <div class="card">
+          <div class="product">
+            <div class="product__image">
+                <img src="../img/shoes.jpg" alt="Running shoes">
+            </div>
+            <div class="product__description">
+              <h2>Hlaupaskór</h2>
+              <p>Þú munt hlaupa hratt í þessum.</p>
+              <h3>19.900 kr.-</h3>
+            </div>
+            <div class="product__form">
+              <form>
+                <label>Fjöldi:</label>
+                <input type="number" name="Fjöldi" min="1" value="1" required>
+                <button type="submit" value="#">Setja í körfu</button>
+              </form>
+            </div>
           </div>
-          <div class="product__form">
-            <form>
-              <label>Fjöldi:</label>
-              <input type="number" name="Fjöldi" min="1" value="1" required>
-              <button type="submit" value="#" class="cart__btn">Setja í körfu</button>
-            </form>
+        </div>
+        <div class="card">
+          <div class="product">
+            <div class="product__image">
+                <img src="../img/headphones.jpg" alt="High quality headphones">
+            </div>
+            <div class="product__description">
+              <h2>Hágæða heyrnatól</h2>
+              <p>Þú munt ekki heyra neitt nema hágæða tónlist með þessum hágæða heyrnatólum. Högum við minnst á að þau eru hágæða?</p>
+              <h3>39.999 kr.-</h3>
+            </div>
+            <div class="product__form">
+              <form>
+                <label>Fjöldi:</label>
+                <input type="number" name="Fjöldi" min="1" value="1" required>
+                <button type="submit" value="#">Setja í körfu</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="product">
+            <div class="product__image">
+                <img src="../img/camera.jpg" alt="Amazing camera">
+            </div>
+            <div class="product__description">
+              <h2>Mögnuð myndavél</h2>
+              <p>Taktu mynd af öllu sem þú sérð.</p>
+              <h3>1.999.900 kr.-</h3>
+            </div>
+            <div class="product__form">
+              <form>
+                <label>Fjöldi:</label>
+                <input type="number" name="Fjöldi" min="1" value="1" required>
+                <button type="submit" value="#">Setja í körfu</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -118,37 +151,37 @@
         <div class="footer__list">
           <ul>
             <h3>Vöruflokkar</h3>
-            <li><a class="footer__list__link" href="./products.html">Nauðsynjavörur</a></li>            
-            <li><a class="footer__list__link" href="./products.html">Frábærar vörur</a></li>          
-            <li><a class="footer__list__link" href="./products.html">Ómissandi vörur</a></li>          
-            <li><a class="footer__list__link" href="./products.html">Ótrúlegar vörur</a></li>          
-            <li><a class="footer__list__link" href="./products.html">Magnaðar vörur</a></li>          
+            <li><a class="list__link" href="./products.html">Nauðsynjavörur</a></li>            
+            <li><a class="list__link" href="./products.html">Frábærar vörur</a></li>          
+            <li><a class="list__link" href="./products.html">Ómissandi vörur</a></li>          
+            <li><a class="list__link" href="./products.html">Ótrúlegar vörur</a></li>          
+            <li><a class="list__link" href="./products.html">Magnaðar vörur</a></li>          
           </ul>
         </div>
         <div class="footer__list">
           <ul>
             <h3>Vöruflokkar</h3>
-            <li><a class="footer__list__link" href="./products.html">Trylltar vörur</a></li>
-            <li><a class="footer__list__link" href="./products.html">Geggjaðar vörur</a></li>
-            <li><a class="footer__list__link" href="./products.html">Svakalegar vörur</a></li>
-            <li><a class="footer__list__link" href="./products.html">Fáránlegar vörur</a></li>
-            <li><a class="footer__list__link" href="./products.html">Klikkaðar vörur</a></li>
+            <li><a class="list__link" href="./products.html">Trylltar vörur</a></li>
+            <li><a class="list__link" href="./products.html">Geggjaðar vörur</a></li>
+            <li><a class="list__link" href="./products.html">Svakalegar vörur</a></li>
+            <li><a class="list__link" href="./products.html">Fáránlegar vörur</a></li>
+            <li><a class="list__link" href="./products.html">Klikkaðar vörur</a></li>
           </ul>            
         </div>
         <div class="footer__list">
           <ul>
             <h3>Vöruflokkar</h3>
-            <li><a class="footer__list__link" href="./products.html">Nýjar vörur</a></li>
-            <li><a class="footer__list__link" href="./products.html">Gamlar vörur</a></li>
-            <li><a class="footer__list__link" href="./products.html">Skrítnar vörur</a></li>
+            <li><a class="list__link" href="./products.html">Nýjar vörur</a></li>
+            <li><a class="list__link" href="./products.html">Gamlar vörur</a></li>
+            <li><a class="list__link" href="./products.html">Skrítnar vörur</a></li>
           </ul>
         </div>
         <div class="footer__list">
           <ul>
             <h3>Síður</h3>
-            <li><a class="footer__list__link" href="./products.html">Allar vörur</a></li>
-            <li><a class="footer__list__link" href="./products.html">Starfsfólk</a></li>
-            <li><a class="footer__list__link" href="./products.html">Karfa</a></li>
+            <li><a class="list__link" href="./products.html">Allar vörur</a></li>
+            <li><a class="list__link" href="./products.html">Starfsfólk</a></li>
+            <li><a class="list__link" href="./products.html">Karfa</a></li>
           </ul>
         </div>
       </div>

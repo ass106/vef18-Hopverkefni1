@@ -1,0 +1,34 @@
+@import "./config";
+
+.cart {
+    font: 100% $font-main;
+    color: $color-1;
+    
+    &__card {
+      width: $max-width;
+      margin: 0 auto;
+      display: flex;  
+      justify-content: center;
+      flex-direction: column;
+
+      & img {
+        width: 33%;
+      }
+
+      &__image {
+      }
+
+      &__content {
+      }
+      
+      &__update {
+
+      }
+
+      &__reset {
+
+      }
+
+    }
+}
+

@@ -29,58 +29,58 @@
       </div>
     </header>
     <main class="cart">
-      <section>
-        <h2>Vörur í körfu</h2>
-      </section>
-      <section>
-        <div class="cart__card">
-          <div class="cart__card__image">
-            <img src="../img/watch.jpg">
-          </div>
-          <div class="cart__card__content">
+      <h2 class="cart__title">Vörur í körfu</h2>
+      <div class="cart__card">
+        <div class="cart__card__image"><img src="../img/watch.jpg"></div>
+        <div class="cart__card__content">
+          <div class="cart__card__content__top">
             <h2>Ótrúlegt úr</h2>
             <p>Hvað er klukkan? Þetta úr mun svara því hvenær sem er.</p>
+          </div>
+          <div class="cart__card__content__bottom">
             <h3>99.900 kr.-</h3>
             <form>
               Fjöldi:
               <input type="number" name="Fjöldi" min="1" value="1" required> 
               <button class="cart__card__update">Uppfæra</button>
-              <button class="cart__card_reset">Eyða úr körfu</button>
+              <button class="cart__card__reset">Eyða úr körfu</button>
             </form>
           </div>
         </div>
+      </div>
 
-        <div class="cart__card">
-          <div class="cart__card__image">
-            <img src="../img/headphones.jpg">
-          </div>
-          <div class="cart__card__content">
+      <div class="cart__card">
+        <div class="cart__card__image"><img src="../img/headphones.jpg"></div>
+        <div class="cart__card__content">
+          <div class="cart__card__content__top">
             <h2>Hágæða heyrnatól</h2>
             <p>Þú munt ekki heyra neitt nema hágæða tónlist með þessum hágæða heyrnatólum. Höfum við minnst á að þau eru hágæða?</p>
+          </div>
+          <div class="cart__card__content__bottom">
             <h3>39.999 kr.-</h3>
             <form>
               Fjöldi:
               <input type="number" name="Fjöldi" min="1" value="1" required>
               <button class="cart__card__update" type="submit">Uppfæra</button>
-              <button class="cart__card_reset" type="reset">Eyða úr körfu</button>
+              <button class="cart__card__reset" type="reset">Eyða úr körfu</button>
             </form>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section class="cart__card">
-        <fieldset>
+      <div class="cart__checkout">
+        <fieldset class="cart__checkout__col">
           <h2>Sendingarupplýsingar</h2>
-          <label>Nafn:</label><input type="text">
-          <label>Email:</label><input type="text">
+          <div class="cart__checkout__col__item"><label>Nafn:</label><input type="text"></div>
+          <div class="cart__checkout__col__item"><label>Email:</label><input type="text">
         </fieldset>
-        <fieldset>
+        <fieldset class="cart__checkout__col">
           <h2>Greiðsluupplýsingar</h2>
-          <label>Kortanúmer:</label><input type="text">
-          <label>Korthafi:</label><input type="text">
+          <div class="cart__checkout__col__item"><label>Kortanúmer:</label><input type="text"></div>
+          <div class="cart__checkout__col__item"><label>Korthafi:</label><input type="text"></div>
         </fieldset>
-          <button>Kaupa</button>
-      </section>
+      </div>
+        <div class="cart__checkout__purchase"><button>Kaupa</button></div>
     </main>
     <footer class="footer">
       <div class="footer__lists">

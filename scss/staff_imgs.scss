@@ -1,8 +1,15 @@
+.staff_imgs > * {
+    margin: 0 auto;
+    width: $max-width;
+}
+
 .staff_imgs {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    & img {
+      width: 50%;
+    }
 
 }
-
-body {
-}
-

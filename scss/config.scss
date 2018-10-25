@@ -18,11 +18,14 @@ $color-6: #cc9694;
 
 $transition: 300ms ease-in-out;
 
-
-@mixin header() {
-    background-color: $color-3;
-    display: flex;
-    height: 20vh;
+@mixin link-style() {
+    color: $color-1;
+    font-family: $font-main;
+    font-weight: bold;
+    transition: 0.4s;
+    &:hover {
+        color: $color-4;
+    }
 }
 
 @mixin row() {

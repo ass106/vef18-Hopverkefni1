@@ -1,28 +1,14 @@
-.staff_imgs > * {
-    margin: 0 auto;
-}
-
-.staff_imgs {
+.staff {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    align-content: space-between;
-
-    & img {
-        width: 100%;
-    }
-
-}
-
-.staff__images {
-    max-width: 49%;
-}
-
-.stradi {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
     flex-flow: row wrap;
+    padding: $gutter;
+    justify-content: center;
+    
+    &__cards {
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+    }
 }
+
 

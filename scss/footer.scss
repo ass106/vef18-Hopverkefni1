@@ -1,32 +1,47 @@
 @import "./config";
 
 .footer {
-    background-color: $color-6;
-    height: 30vh;
-    padding: $gutter;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
+    background-color: $color-6;
+    padding: $gutter;
+   
+    height: 20vh;
+
+    @media screen and (min-width:$medium) {
+        height: 60vh;
+        
+    }
     
     &__lists {
         display: flex;
-        justify-content: space-around;
-        width: 100%;
+        justify-content: flex-start;
+        align-content: space-between;
         max-width: 1200px;
+        width: 100%;
+        font-size: 21px;
     }
     
     &__list {
         display: flex;
         flex-direction: column;
-        width: 50%;
+        align-content: flex-start;
+        width: 20%;
+        padding-right: $gutter;
 
         font-family: $font-main;
         font-weight: bold;
         
         & ul {
             list-style: none;
+
+            & label {
+                font-size: 24px;
+                font-weight: bold;
+            }
         }
     }   
     &__note {

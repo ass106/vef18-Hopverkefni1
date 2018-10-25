@@ -1,0 +1,17 @@
+.staff_imgs > * {
+    margin: 0 auto;
+}
+
+.staff_imgs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    & img {
+        width: 20%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+}

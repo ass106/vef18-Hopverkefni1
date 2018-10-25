@@ -6,10 +6,23 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    max-width: 1200px;
+    align-content: space-between;
 
     & img {
-        height: 96vh;
+        width: 100%;
     }
 
 }
+
+.staff__images {
+    max-width: 49%;
+}
+
+.stradi {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-flow: row wrap;
+}
+

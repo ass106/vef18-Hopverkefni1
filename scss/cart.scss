@@ -1,16 +1,19 @@
 @import "./config";
 
 .cart > * {
-  max-width: $max-width;
-  margin: 0 auto;
   margin-top: 20px;
 }
 
 .cart {
     display: flex;
     flex-direction: column;
+    max-width: $max-width;
+    margin: 20px auto;
 
     &__title {
+      display: flex;
+      align-self: flex-start;
+      justify-content: flex-start;
     }
 
     &__card {
@@ -45,24 +48,39 @@
       &__reset {
 
       }
+    }// card end
 
     &__checkout {
       display: flex;
       flex-direction: row;
-
-      & fieldset {
-      }
+      margin: 20px auto;
 
       &__col {
+        display: flex;
+        flex-direction: column;
 
         &__item {
+          display: flex;
+          justify-content: space-between;
+          margin-right: 20px;
         }
 
+        &__item > * {
+          margin-top: 10px;
+          margin-right:20px;
+        }
       }
+    }//checkout end
 
-      &__purchase {
+    &__purchase {
+      margin: 20px auto;
+
+      & button {
+        background-color: $color-6;
+        border: 0;
+        font-weight: bolder;
+        padding: 10px 120px;
       }
-
     }
-  }
-}
+
+ }// cart end

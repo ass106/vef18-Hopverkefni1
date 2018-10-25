@@ -3,6 +3,7 @@
 .footer {
     background-color: $color-6;
     height: 30vh;
+    padding: $gutter;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -12,6 +13,8 @@
     &__lists {
         display: flex;
         justify-content: space-around;
+        width: 100%;
+        max-width: 1200px;
     }
     
     &__list {

@@ -28,7 +28,7 @@
         text-transform: uppercase;
         font-weight: bold;
 
-        @media screen and (min-width: $small) {
+        @media screen and (max-width: $small) {
             flex-direction: column;
             justify-content: center;
         }
@@ -39,9 +39,10 @@
         align-items: flex-end;
         width: 50%;
 
-        @media screen and (min-width: $small) {
+        @media screen and (max-width: $small) {
             display: flex;
-            margin: 0 auto;
+            justify-content: center;
+            width: 100%;
         }
 
         & a {
@@ -68,8 +69,8 @@
         justify-content: flex-end;
         width: 24%;
 
-        @media screen and (min-width: $small) {
-            margin: 0 auto;
+        @media screen and (max-width: $small) {
+            width: 100%;
             justify-content: center;
             
         }

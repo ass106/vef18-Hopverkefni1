@@ -1,34 +1,27 @@
-.staff_imgs > * {
-    margin: 0 auto;
-}
-
-.staff_imgs {
+.staff {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    align-content: space-between;
-
-    & img {
-        width: 100%;
+    flex-flow: row wrap;
+    padding: $gutter;
+    justify-content: center;
+    
+    &__cards {
+        max-width: 1200px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
     }
 
+    &__card {
+        max-width: 49%;
+    }
+
+    &__img {
+        width: 100%;
+
+        & img {
+            width: 100%;
+        }
+    }
 }
 
-.staff__images {
-    max-width: 49%;
-    perspective: 1000px;
-}
-
-img:hover {
-    transform: rotateY(180deg);
-}
-
-
-.stradi {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    flex-flow: row wrap;
-}
 

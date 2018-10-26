@@ -1,28 +1,33 @@
 @import "./config";
 
-.cart > * {
-  margin-top: 20px;
-}
-
 .cart {
     display: flex;
     flex-direction: column;
     max-width: $max-width;
-    margin: 20px auto;
+    margin: $gutter auto;
 
     &__title {
       display: flex;
-      align-self: flex-start;
-      justify-content: flex-start;
+      padding-right: $gutter;
+      padding-left: $gutter;
     }
 
     &__card {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      padding: $gutter;
 
+      @media (max-width:500px) {
+        flex-direction: column;
+      }
       &__image {
+        margin-right: $gutter;
         width: 33%;
+
+        @media (max-width:500px) {
+          width: 100%;
+        }
       }
 
       & img {
@@ -31,21 +36,62 @@
 
       &__content {
         display: flex;
-        margin-left: 20px;
-        width: 67%;
         flex-direction: column;
         justify-content: space-between;
+        width: 67%;
+        @media(max-width:500px) {
+          margin-top: $gutter;
+          width: 100%;
+        }
 
         &__bottom {
           display: flex;
           flex-direction: column;
+          @media(max-width:500px) {
+            margin-top: $gutter;
+          }
+        }
+      }
+
+      &__form {
+        display: flex;
+        justify-content: space-between;
+        max-width: 50%;
+        flex-wrap: wrap;
+
+        &__label {
+          width: 100%;
         }
       }
       
       &__update {
+        background: none;
+        text-align: right;
+        border: solid 1px $color-1;
+        border-radius: 5px;
+        
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        font-size: 80%;
+
+        transition: $transition;
       }
 
       &__reset {
+        background: none;
+        text-align: right;
+        border: solid 1px $color-1;
+        border-radius: 5px;
+        
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        font-size: 80%;
+
+        transition: $transition;
 
       }
     }// card end
@@ -53,27 +99,35 @@
     &__checkout {
       display: flex;
       flex-direction: row;
-      margin: 20px auto;
+      margin: 0 auto;
+      padding: $gutter;
+
+      @media (max-width:500px) {
+        flex-direction: column;
+      }
 
       &__col {
         display: flex;
         flex-direction: column;
+        @media (max-width:500px) {
+          margin-top: $gutter; 
+        }
 
         &__item {
           display: flex;
           justify-content: space-between;
-          margin-right: 20px;
+          margin-right: $gutter;
         }
 
         &__item > * {
-          margin-top: 10px;
-          margin-right:20px;
+          margin-top: $gutter/2;
+          margin-right: $gutter/2;
         }
       }
     }//checkout end
 
     &__purchase {
-      margin: 20px auto;
+      margin: $gutter auto;
 
       & button {
         background-color: $color-6;

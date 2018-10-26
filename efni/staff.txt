@@ -1,14 +1,14 @@
-Karólína Pálsdóttir
-Karólína er forstjóri Vöruhússins.
+<h3>Karólína Pálsdóttir</h2>
+<p>Karólína er forstjóri Vöruhússins.</p>
 
 
-Tómas Jónsson
-Tómas sér um að koma vörunum til þín. Hratt og örugglega.
+<h3>Tómas Jónsson</h2>
+<p>Tómas sér um að koma vörunum til þín. Hratt og örugglega.</p>
 
 
-Anna Atladóttir
-Anna er forritari hjá Vöruhúsinu. Ef eitthvað er að, lagar Anna það.
+<h3>Anna Atladóttir</h2>
+<p>Anna er forritari hjá Vöruhúsinu. Ef eitthvað er að, lagar Anna það.</p>
 
 
-Jón Guðmundsson
-Jón sér um peningana. Gefðu Jóni peninga með því að kaupa eitthvað klikkað hjá Vöruhúsinu.
+<h3>Jón Guðmundsson</h2>
+<p>Jón sér um peningana. Gefðu Jóni peninga með því að kaupa eitthvað klikkað hjá Vöruhúsinu.</p>

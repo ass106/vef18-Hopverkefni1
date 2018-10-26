@@ -20,7 +20,19 @@ $small: 500px;
 // Leturstærðir
 // 12 14 16 18 21 24 36 48 60
 
-$transition: 300ms ease-in-out;
+@keyframes fade {
+    /* hreyfing í 0% => opacity: 0 */
+    from { opacity: 1; }
+
+    /* hreyfing í 50% => opacity: 0.4 */
+    50% { opacity: 0.4; }
+
+    /* hreyfing í 100% => opacity: 1 */
+    to { opacity: 0; }
+}
+
+$transition: 300ms ease-in;
+$transition-fade: 300ms fade ease-in-out;
 
 @mixin link-style() {
     color: $color-1;

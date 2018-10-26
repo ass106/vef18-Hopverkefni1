@@ -4,7 +4,9 @@
 
 ## Verkskipting:
 Ástráður: package.json skriptur og uppsetning, Header & footer, index.html stýling og hluti af products.html stýling.
+
 Teitur: Staff.html stýling
+
 Óskar: cart.html stýling
 
 ## Keyrsla

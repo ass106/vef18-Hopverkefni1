@@ -1,6 +1,6 @@
 
 # Hópverkefni 1
-Ástráður(ass106 & ass_branch), Teitur(teg6 & teyter_branch) og Óskar (osh16? & oskar_branch).
+Ástráður(ass106 & ass_branch), Teitur(teg6 & teyter_branch) og Óskar (osh16 & oskar_branch).
 
 ## Verkskipting:
 Ástráður: package.json skriptur og uppsetning, Header & footer, index.html stýling og hluti af products.html stýling.

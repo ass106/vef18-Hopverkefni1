@@ -3,38 +3,39 @@
 .footer {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
     background-color: $color-6;
     padding: $gutter;
-   
-    height: 20vh;
-
-    @media screen and (min-width:$medium) {
-        height: 60vh;
-        
-    }
     
     &__lists {
         display: flex;
-        justify-content: flex-start;
-        align-content: space-between;
-        max-width: 1200px;
-        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: $max-width;
+        max-width: 100%;
         font-size: 21px;
+        margin: 0 auto;
+
+        @media (max-width:800px) {
+          
+        }
     }
     
     &__list {
         display: flex;
-        flex-direction: column;
-        align-content: flex-start;
-        width: 20%;
         padding-right: $gutter;
 
         font-family: $font-main;
         font-weight: bold;
-        
+
+        @media (max-width:800px) {
+          width: 50%;  
+        }
+        @media (max-width:400px) {
+          width: 100%;
+        } 
+        & > * {
+          padding: $gutter;
+        }
         & ul {
             list-style: none;
 
@@ -53,7 +54,6 @@
     &__link {
         text-decoration: none;
         color: $color-5;
-        text-decoration: none;
         font-weight: normal;
         transition: 0.4s;
         

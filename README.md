@@ -5,13 +5,19 @@
 ## Verkskipting:
 Ástráður: package.json skriptur og uppsetning, Header & footer, index.html stýling og hluti af products.html stýling.
 
-Teitur: Staff.html stýling
+Teitur: Staff.html stýling og að fokka upp hlutum með linux committi... "~" endingar eru hans. Held að þær séu horfnar.
 
-Óskar: cart.html stýling
+Óskar: cart.html stýling, einnig @media stillingar á flestum síðum í minni stærðum. Raðanir á buttons.
 
 ## Keyrsla
 
-Hægt er að keyra síðu með skipuninni npm run runSite.
+Hægt er að keyra síðu með skipuninni "npm run runSite" ef að node.js er sett upp. Package.json inniheldur skilgreinda skriptu fyrir þá keyrslu.
+
+## Tengill á vefsíðu!
+
+Hér fyrir neðan er tengill á vefsíðuna á heimadrifi Ástráðs:
+
+https://notendur.hi.is/~ass106/vefforritun/Hopverkefni1/index.html
 
 # Hópverkefni 1
 

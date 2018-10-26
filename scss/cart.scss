@@ -52,11 +52,46 @@
           }
         }
       }
+
+      &__form {
+        display: flex;
+        justify-content: space-between;
+        max-width: 50%;
+        flex-wrap: wrap;
+
+        &__label {
+          width: 100%;
+        }
+      }
       
       &__update {
+        background: none;
+        text-align: right;
+        border: solid 1px $color-1;
+        border-radius: 5px;
+        
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        font-size: 80%;
+
+        transition: $transition;
       }
 
       &__reset {
+        background: none;
+        text-align: right;
+        border: solid 1px $color-1;
+        border-radius: 5px;
+        
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        font-size: 80%;
+
+        transition: $transition;
 
       }
     }// card end

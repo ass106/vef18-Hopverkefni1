@@ -17,7 +17,13 @@
 
 .staff__images {
     max-width: 49%;
+    perspective: 1000px;
 }
+
+img:hover {
+    transform: rotateY(180deg);
+}
+
 
 .stradi {
     display: flex;

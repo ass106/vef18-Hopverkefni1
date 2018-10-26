@@ -14,7 +14,11 @@
         justify-content: space-between;
 
         color: $color-1;
-        max-width: 1200px;
+        max-width: $max-width;
+
+        @media (max-width: $small) {
+          flex-direction: column;
+        }
 
         & h2 {
             font-family: $font-heading;
@@ -31,8 +35,13 @@
         display: flex;
         width: 32%;
         margin: $gutter 0;
+
         @media screen and (max-width: $medium) {
             width: 48.5%;
+        }
+
+        @media (max-width: $small) {
+          width: 100%;
         }
     }
 }

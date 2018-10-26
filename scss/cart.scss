@@ -1,5 +1,10 @@
 @import "./config";
-
+html {
+  font-family: $font-main;
+}
+h1,h2,h3 {
+  font-family: $font-heading;
+}
 .cart {
   display: flex;
   justify-content: center;
@@ -8,9 +13,9 @@
   &__box {
     display: flex;
     flex-direction: column;
-    max-width: $max-width;
     justify-content: center;
-  }
+    max-width: $max-width;
+  } 
 
   &__title {
     display: flex;
@@ -22,20 +27,22 @@
     justify-content: space-between;
     padding: $gutter 0;
 
-    @media (max-width:500px) {
+    @media (max-width:$small) {
       flex-direction: column;
     }
     
     &__image {
       margin-right: $gutter;
-      width: 33%;
+      max-width: 33%;
+
+      @media (max-width:$small) {
+        max-width: 100%;
+      }
+
       & img {
         max-width: 100%;
       }
       
-      @media (max-width:500px) {
-        width: 100%;
-      }
     }
 
 
@@ -44,7 +51,8 @@
       flex-direction: column;
       justify-content: space-between;
       width: 67%;
-      @media(max-width:500px) {
+
+      @media(max-width:$small) {
         margin-top: $gutter;
         width: 100%;
       }
@@ -52,25 +60,27 @@
       &__bottom {
         display: flex;
         flex-direction: column;
-        @media(max-width:500px) {
+        
+        @media(max-width:$small) {
           margin-top: $gutter;
         }
       }
     }
     
     &__svg {
-      max-width: 1rem;
+      width: 1rem;
       & img {
         width: 100%;
       }
     }
 
+    &__form > * {
+      margin-right: $gutter/2;
+    }
+
     &__form {
       display: flex;
-      justify-content: space-between;
-      max-width: 49%;
       flex-wrap: wrap;
-
       height: $gutter*3;
 
       &__label {
@@ -88,6 +98,7 @@
       text-align: right;
       border: solid 1px $color-1;
       border-radius: 5px;
+      height: $gutter*2;
       
       display: flex;
       justify-content: space-around;
@@ -153,7 +164,6 @@
     & button {
       background-color: $color-6;
       border: 0;
-      font-weight: bolder;
       padding: 10px 120px;
     }
   }

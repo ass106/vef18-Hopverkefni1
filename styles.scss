@@ -14,21 +14,11 @@
 html { /* stylelint-disable-line */
   box-sizing: border-box;
   overflow-x: hidden;
-
-  // TODO fleiri grunn stillingar
-
-  h1, h2, h3 {
-    font-family: $font-heading;
-  }
-
-  p {
-    font-family: $font-main;
-  }
-
 }
-
-
-
+h1 {
+  font-family: $font-heading;
+}
+// TODO fleiri grunn stillingar
 // TODO sækja allar sass skrár
 @import "./scss/cards";
 @import "./scss/header";

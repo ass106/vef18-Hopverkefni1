@@ -2,21 +2,25 @@
 
 .cart {
   display: flex;
-  flex-direction: column;
-  max-width: $max-width;
-  margin: $gutter auto;
+  justify-content: center;
+  padding: $gutter;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    max-width: $max-width;
+    justify-content: center;
+  }
 
   &__title {
     display: flex;
-    padding-right: $gutter;
-    padding-left: $gutter;
   }
 
   &__card {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: $gutter;
+    padding: $gutter 0;
 
     @media (max-width:500px) {
       flex-direction: column;
@@ -55,8 +59,9 @@
     }
     
     &__svg {
-      width: 1rem;
+      max-width: 1rem;
       & img {
+        width: 100%;
       }
     }
 
@@ -88,8 +93,9 @@
       justify-content: space-around;
       align-items: center;
 
-      width: $gutter*6;
-
+      max-width: $gutter*6;
+      width: 100%;
+      
       transition: $transition;
     }
 
@@ -103,7 +109,8 @@
       justify-content: space-around;
       align-items: center;
 
-      width: $gutter*7;
+      max-width: $gutter*7;
+      width: 100%;
 
       transition: $transition;
 
@@ -116,14 +123,14 @@
     margin: 0 auto;
     padding: $gutter;
 
-    @media (max-width:500px) {
+    @media (max-width:$small) {
       flex-direction: column;
     }
 
     &__col {
       display: flex;
       flex-direction: column;
-      @media (max-width:500px) {
+      @media (max-width:$small) {
         margin-top: $gutter; 
       }
 
